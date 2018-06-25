@@ -1,0 +1,16 @@
+.article
+	color: $blue
+	+f(18px, 300, 2)
+	+md
+		font-size: 14px
+		line-height: 1.6
+	.title-lg
+		&:not(:last-child)
+			margin-bottom: 25px
+			+md
+				margin-bottom: 10px
+	p
+		&:not(:last-child)
+			margin-bottom: 30px
+			+md
+				margin-bottom: 23px

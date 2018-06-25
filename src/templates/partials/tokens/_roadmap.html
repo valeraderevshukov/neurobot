@@ -1,0 +1,122 @@
+<!-- begin roadmap -->
+<div class="roadmap">
+	<div class="roadmap__inner-sm inner-sm">
+		<div class="roadmap__head">
+			<h3 class="roadmap__title title-lg">Roadmap</h3>
+			<div class="roadmap__description">2017-2018</div>
+		</div>
+		<div class="roadmap__wrap">
+			<div class="roadmap__out">
+				{% for item in [
+					{
+						icon: 'elliott',
+						title: 'Elliott wave theory',
+						text: 'The algorithm will take into account the Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.'
+					},
+					{
+						icon: 'analysis',
+						title: 'Basic analysis of news',
+						text: 'Accounting for news in the forecast of neurobot. Basic analysis of market sentiment.'
+					},
+					{
+						icon: 'api',
+						title: 'API for trading systems',
+						text: 'The launch of a beta api for developing trading robots on the platform Neurobot.'
+					},
+					{
+						icon: 'improved',
+						title: 'Improved news analysis',
+						text: 'Grouping news into semantic chains according to the positive and negative scenarios. This will enable neurobot to predict the emerging of news critical to the market.'
+					},
+					{
+						icon: 'instruments',
+						title: 'Adding new trading instruments',
+						text: 'Forecasting tokens. The overall improvement in accuracy of the algorithm.'
+					},
+					{
+						icon: 'rocket',
+						title: 'The release version of Neurobot',
+						text: 'Run the release version API for developing trading robots.'
+					}
+				] %}
+				<div class="roadmap__row">
+					<div class="roadmap__col">
+						<div class="roadmap__vert">
+							<div class="roadmap__icon">{{ mixins.icon(item.icon) }}</div>
+							<h4 class="roadmap__title-sm">{{ item.title }}</h4>
+							<div class="roadmap__text">{{ item.text }}</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<!-- begin pathways -->
+			<div class="pathways">
+				<div class="pathways__desctop">
+					<div class="path path_first">
+						<div class="path__cube"><img src="./img/path/box-1.png" alt="cube"></div>
+						<div class="path__img">
+							<img src="./img/path/line-1.png" alt="img">
+						</div>
+						<div class="circle circle_white circle_right"> 
+							<div class="circle__step">10</div>
+							<div class="circle__year">2017</div>
+						</div>
+					</div>
+					<div class="path path_second">
+						<div class="path__cube"><img src="./img/path/box-2.png" alt="cube"></div>
+						<div class="path__img">
+							<img src="./img/path/line-2.png" alt="img">
+						</div>
+						<div class="circle circle_white"> 
+							<div class="circle__step">11</div>
+							<div class="circle__year">2017</div>
+						</div>
+					</div>
+					<div class="path path_third">
+						<div class="path__img">
+							<img src="./img/path/line-3.png" alt="img">
+						</div>
+						<div class="circle">
+							<div class="circle__step">01</div>
+							<div class="circle__year">2018</div>
+						</div>
+					</div>
+					<div class="path path_fours">
+						<div class="path__img">
+							<img src="./img/path/line-4.png" alt="img">
+						</div>
+						<div class="circle">
+							<div class="circle__step">03</div>
+							<div class="circle__year">2018</div>
+						</div>
+					</div>
+					<div class="path path_fives">
+						<div class="path__cube"><img src="./img/path/box-3.png" alt="cube"></div>
+						<div class="path__img">
+							<img src="./img/path/line-5.png" alt="img">
+						</div>
+						<div class="circle">
+							<div class="circle__step">04</div>
+							<div class="circle__year">2018</div>
+						</div>
+					</div>
+					<div class="path path_sixth">
+						<div class="path__cube"><img src="./img/path/box-4.png" alt="cube"></div>
+						<div class="path__img">
+							<img src="./img/path/line-6.png" alt="img">
+						</div>
+						<div class="circle">
+							<div class="circle__step">03</div>
+							<div class="circle__year">2018</div>
+						</div>
+					</div>
+				</div>
+				<div class="pathways__mob"></div>
+			</div>
+			<!-- end pathways -->
+			<div data-cube="tokens-roadmap"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+		</div>
+	</div>
+</div>
+<!-- end roadmap -->

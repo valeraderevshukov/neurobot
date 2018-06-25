@@ -1,0 +1,79 @@
+---
+title: About
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<!-- begin about -->
+	<div class="about" data-cube-parent>
+		<div data-cube="about-left"><img src="./img/tokens-cube-left.png" alt="cube"></div>
+		<div class="about__inner inner">
+			<div class="about__wrap wrap-white" data-cube-parent>
+				<article class="article">
+					<h2 class="title-lg">About us</h2>
+					<p>The NeuroBot is a neural network algorithm created for forecasting exchange rates of cryptocurrencies. The neural network collects and analyses Data 24/7 and provides forecasts for various cryptocurrencies' exchange rates. There are three types of forecasts: 24 hours, 48 hours and one week. Neural network algorithm implemented with algorithms of the essential aspects of technical analysis, such as patterns and signal indicators calculate forecast Data with one second time.</p>
+					<p>The program will be further upgraded by introducing the remaining elements of technical analysis (Fibonacci retracement, the Elliot wave theory , etc ) and fundamental analysis - market news algorithms will be implemented - one more neural network with functions to determine positive and negative tendencies of the market.</p>
+					<p>All forecast Data will be available to use via NeuroBot API at further stage of the project.</p>
+					<p>The project is targeted at traders with any level of preparation and experience. Traders no longer have to be aware of every miniscule detail of technical analysis, wasting time and effort trying to make their skills and knowledge deeper and more specific. It facilitates the work o f professional traders, allows them to channel their strength into the realization and opens possibilities for the newcomers, who are just entering the exchange trade, serving as a powerful and reliable instrument in their activity. NeuroBots algorithm is based on LSTM - network (Long short - term memory) coupled with Gradient Boosting - another machine learning technique. Due to the abilities of neural networks, NeuroBot is constantly learning to better correspond to the state of the market to make more a ccurate forecasts and improve the quality of the resulting work.</p>
+				</article>
+				<div data-cube="about-top"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+				<div data-cube="about-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+			</div>
+		</div>
+		<!-- begin team -->
+		<div class="team">
+			<div class="team__inner-sm inner-sm" data-cube-parent>
+				<h2 class="team__title title-md">Our team</h2>
+				<div class="team__wrap">
+					{% for item in [
+						{
+							img: 'team-1',
+							name: 'David Sable',
+							post: 'Founder and CEO'
+						},
+						{
+							img: 'team-2',
+							name: 'Liz Ryan',
+							post: 'Vice Chair'
+						},
+						{
+							img: 'team-3',
+							name: 'Richard Branson',
+							post: 'Designer'
+						},
+						{
+							img: 'team-4',
+							name: 'Jared Tredly',
+							post: 'Founder and CEO'
+						},
+						{
+							img: 'team-5',
+							name: 'Vilen Burobin',
+							post: 'Vice Chair'
+						},
+						{
+							img: 'team-6',
+							name: 'Kathy Caprino',
+							post: 'SMM Manager'
+						}
+					] %}
+					<div class="team__col">
+						<div class="team__item">
+							<div class="team__img" style="background-image: url(./img/{{ item.img }}.jpg);"></div>
+							<div class="team__name">{{ item.name }}</div>
+							<div class="team__post">{{ item.post }}</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+				<div data-cube="team-bottom"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+			</div>
+		</div>
+		<!-- end team -->
+	</div>
+	<!-- end about -->
+	{% include "partials/home/_footer.html" %}
+
+{% endblock %}

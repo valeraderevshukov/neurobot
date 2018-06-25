@@ -1,0 +1,126 @@
+.pathways
+	position: absolute
+	top: -244px
+	left: 50%
+	bottom: 0
+	margin-left: -295px
+	width: 580px
+	+md
+		top: -185px
+		margin-left: -217px
+		width: 434px
+	
+.path
+	position: relative
+	&:not(:first-child)
+		margin-top: -10px
+		+md
+			margin-top: -7px
+	&__cube
+		position: absolute
+		img
+			max-width: 100%
+			display: block
+		.path_first &
+			top: -120px
+			right: -20px
+			width: 192px
+			+md
+				top: -89px 
+				width: 146px
+		.path_second &
+			top: 8px
+			right: 92px
+			width: 96px
+			+md
+				top: 6px
+				right: 69px
+				width: 72px
+		.path_fives &
+			top: 16px
+			left: 78px
+			width: 96px
+			+md
+				top: 14px
+				left: 53px
+				width: 72px
+		.path_sixth &
+			top: 220px
+			right: -406px
+			width: 181px
+			+md
+				top: 46px
+				right: -102px
+				width: 136px
+	&__img
+		width: 50%
+		font-size: 0
+		.path.path_first &
+			width: 100%
+		.path.path_sixth &
+			width: 968px
+			+md
+				width: 728px
+		.path:nth-child(even) &
+			margin-left: 50%
+		.path:not(:first-child):nth-child(odd) &
+			margin-left: 5px
+			+md
+				margin-left: 0
+		img
+			max-width: 100%
+			display: block
+.circle
+	position: absolute
+	top: -32px
+	left: 50%
+	margin-left: -33px
+	width: 72px
+	height: 72px
+	padding-top: 14px
+	line-height: 1
+	text-align: center
+	color: $white
+	border-radius: 50% 
+	background-color: #09a5b0
+	+md
+		top: -25px 
+		margin-left: -23px
+		width: 54px
+		height: 54px
+	&:before
+		position: absolute
+		content: ""
+		right: 0
+		bottom: 0
+		width: 40px
+		height: 40px
+		border-bottom-right-radius: 4px 
+		background-color: #09a5b0
+		+md
+			width: 30px
+			height: 30px
+		.path:nth-child(even) &
+			left: 0
+			border-bottom-left-radius: 4px 
+	&_white
+		color: $blue
+		background-color: $white 
+		&:before
+			background-color: $white 
+	.path_first &
+		top: 140px
+		+md
+			top: 103px 
+	&__step
+		position: relative
+		font-size: 24px
+		font-weight: 500
+		+md
+			font-size: 18px
+	&__year
+		position: relative
+		font-size: 12px
+		font-weight: 300
+		+md
+			font-size: 9px

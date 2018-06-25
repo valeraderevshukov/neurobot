@@ -1,0 +1,20 @@
+<!-- begin footer -->
+<div class="footer">
+	<div class="footer__inner inner-sm" data-cube-parent>
+		<div class="footer__wrap">
+			<!-- begin soc -->
+			<ul class="footer__soc soc">
+				{% for icon in ['fb', 'inst', 'yt', 'vk'] %}
+				<li class="soc__item"><a href="#" class="soc__link" target="_blank">{{ mixins.icon(icon) }}</a></li>
+				{% endfor %}
+			</ul>
+			<!-- end soc -->
+			<div class="footer__right">
+				<a href="#" class="link" target="_blank">Cookies</a>
+				<a href="#" class="link" target="_blank">Privacy Policy</a>
+			</div>
+		</div>
+		<div class="footer__cube" data-cube="footer-left"><img src="./img/footer-cube.png" alt="cube"></div>
+	</div>
+</div>
+<!-- end footer -->

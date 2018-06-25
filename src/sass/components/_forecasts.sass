@@ -1,0 +1,141 @@
+.forecasts
+	position: relative
+	padding: 75px 0 70px
+	color: $white 
+	+md
+		padding: 30px 0 
+	+sm
+		padding: 15px 0
+	&:before
+		position: absolute
+		content: ""
+		top: 50%
+		left: 50%
+		height: 210%
+		width: 300vw
+		transform: translate(-50%,-50%) rotate(30deg)
+		background-color: $blue 
+		+sm
+			width: 400vw 
+			height: 200%
+			transform: translate(-50%,-36%) rotate(30deg)
+	&__title
+		margin-bottom: 7px
+		+md
+			margin-bottom: 5px
+		+sm
+			font-size: 30px
+	&__description
+		+f(24px,600,1.5)
+		+md
+			font-size: 18px
+		+sm
+			padding-right: 30px
+			font-size: 16px
+	&__chart
+		margin-top: 37px
+		+md
+			margin-top: 25px 
+.chart
+	&__wrapper
+		margin-top: 11px
+		+sm
+			margin-top: 22px 
+.tags
+	position: relative
+	font-size: 0
+	overflow: hidden
+	&__inner
+		margin-right: -29px
+.tag
+	margin: 0 29px 29px 0
+	padding: 18px 26px
+	color: $white 
+	font-family: $montserrat
+	+f(30px,700,1.2)
+	border: 8px solid #223e5c
+	border-radius: 8px
+	vertical-align: top
+	text-transform: uppercase
+	background-color: transparent 
+	transition: border-color .3s, background-color .3s
+	display: inline-block
+	+md
+		margin: 0 20px 20px 0
+		padding: 13px 15px 
+		font-size: 18px
+		min-width: 101px
+	+sm
+		margin: 0 9px 10px 0
+		padding: 7px 11px 
+		border-width: 6px
+		min-width: 90px
+	&:hover
+		border-color: $turquoise 
+		background-color: $turquoise
+.graph
+	position: relative
+	margin: 0 auto
+	padding: 0 30px
+	max-width: 1920px
+	+sm
+		padding: 0 15px
+	img
+		max-width: 100%
+		display: block
+	&__head
+		position: absolute
+		top: 32px
+		left: 0
+		right: 0
+		z-index: 10
+		+sm
+			position: relative
+			top: auto
+			margin-bottom: 15px
+			width: 100%
+			display: block
+	&__inner-sm
+		max-width: 932px 
+		+sm
+			padding: 0
+		&:after
+			+sm
+				display: none
+		+sm
+			display: flex
+			white-space: wrap
+			justify-content: space-between
+	&__col
+		text-align: right
+		vertical-align: top
+		display: inline-block
+		+sm
+			display: block
+		&:not(:first-child)
+			margin-left: 45px
+			+sm
+				margin-left: 0
+	&__time
+		min-height: 12px
+		+f(12px, 500, 1)
+		+sm
+			font-size: 10px
+	&__text
+		margin-top: 4px 
+		+f(24px, 700, 1)
+		+sm
+			font-size: 18px
+	&__parcent
+		margin-top: 4px
+		+f(12px, 400, 1)
+		color: $green
+		+sm
+			margin-top: 10px
+			font-size: 10px
+		.icon
+			margin-top: 2px
+			font-size: 5px
+			vertical-align: top
+			+sm
+				font-size: 4px

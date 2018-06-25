@@ -1,5 +1,33 @@
 body
-	background: $white
+	font-family: $montserrat
+	+f(14px, 400, 1.6)
+	min-width: 320px
 	+font-smoothing
-	line-height: 1.4
+	background-color: $turquoise 
 
+.row
+	margin: 0 -17px
+	+clr
+	+md
+		margin: 0 -12px
+.col
+	float: left
+	padding: 0 17px
+	+md
+		padding: 0 12px
+	&-33
+		width: 33.3%
+	&-sm-100
+		+sm
+			width: 100%
+
+.light-turquoise
+	color: $light-turquoise
+
+.wrap-white
+	padding: 65px 100px 107px 98px
+	background-color: $white
+	border-radius: 16px
+	box-shadow: 0 24px 72px rgba(29, 53, 78, 0.25)
+	+md
+		padding: 35px 40px 48px 37px

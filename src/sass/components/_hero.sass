@@ -1,0 +1,125 @@
+.hero
+	position: relative
+	z-index: 1
+	padding: 60px 0 75px
+	color: $white 
+	+md
+		padding: 48px 0 30px  
+	+sm
+		padding-bottom: 15px
+	&__wrap
+		+clr
+	&__text
+		position: relative
+		z-index: 1
+		float: right
+		text-align: center
+		max-width: 620px
+		+md
+			max-width: 400px
+		+sm
+			float: none
+			margin: 0 -5px
+			max-width: initial
+	&__description
+		margin-top: 8px
+		+f(30px,600,1.6)
+		+md
+			font-size: 18px
+		+sm
+			margin-top: 11px 
+	&__footer
+		margin-top: 25px
+		+md
+			margin-top: 16px 
+		+sm
+			margin-top: 30px 
+	&__video
+		margin-top: 205px
+		+md
+			margin-top: 166px 
+		+sm
+			margin-top: 310px 
+.video
+	position: relative
+	padding: 48px
+	background-color: white
+	border-radius: 16px
+	+md
+		padding: 25px
+	+sm
+		padding: 10px
+	video
+		width: 100%
+		height: 624px
+		display: block
+		+md
+			height: 420px
+		+sm
+			height: 340px
+		+r(450)
+			height: 170px
+	&__inner
+		overflow: hidden
+		border-radius: 8px
+		background-color: #222 
+	&__robot
+		position: absolute
+		width: 1102px
+		left: -91px
+		top: -759px
+		pointer-events: none
+		+md
+			left: -68px
+			top: -573px
+			width: 832px 
+		+sm
+			display: none
+	&__robot,
+	&__robot-sm
+		img
+			max-width: 100%
+			display: block
+	&__robot-sm
+		position: absolute
+		left: -45px
+		top: -433px
+		width: 402px
+		pointer-events: none
+		display: none
+		+sm
+			display: block
+	&__trigger
+		position: absolute
+		top: 50%
+		left: 50%
+		z-index: 2
+		margin: -60px 0 0 -60px
+		width: 120px
+		height: 120px
+		color: $turquoise 
+		cursor: pointer
+		font-size: 0
+		transition: transform .3s
+		background-color: transparent 
+		+sm
+			margin: -30px 0 0 -30px
+			height: 60px
+			width: 60px
+		&:hover
+			transform: scale(1.15)
+		&:before
+			position: absolute
+			content: "" 
+			top: 50%
+			left: 50%
+			margin: -21px 0 0 -12px
+			+arr(36,42,$white,r)
+			+sm
+				margin: -11px 0 0 -6px
+				+arr(18,22,$white,r)
+		.icon
+			font-size: 120px
+			+sm
+				font-size: 60px
+			

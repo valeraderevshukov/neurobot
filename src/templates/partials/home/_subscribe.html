@@ -1,0 +1,38 @@
+<!-- begin relations -->
+<div class="relations">
+	<div class="relations__inner inner">
+		<div class="relations__channels">
+			{% for item in [
+				{
+					icon: "telegram",
+					text: "Telegram bot"
+				},
+				{
+					icon: "telegram",
+					text: "Telegram group"
+				},
+				{
+					icon: "telegram",
+					text: "Telegram channel"
+				}
+			] %}
+			<a href="#" class="relations__btn btn btn-white">{{ mixins.icon(item.icon) }}{{ item.text }}</a>
+			{% endfor %}
+			<div class="relations__footer">
+				<a href="mailto:support@neurobot.trading" class="link">support@neurobot.trading</a>
+			</div>
+		</div>
+		<div class="relations__subscribe subscribe">
+			<form action="/">
+				<h2 class="subscribe__title-md title-md title-mix">Frequently Asked<span class="extra-light">Questions</span></h2>
+				<div class="form-control">
+					<div class="input"><input type="text" placeholder="e-mail"></div>
+				</div>
+				<div class="subscribe__submit">
+					<button class="btn" type="submit">Subscribe</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- end"relations -->

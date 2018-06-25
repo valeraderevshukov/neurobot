@@ -1,0 +1,51 @@
+<!-- begin forecasts -->
+<div class="forecasts">
+	<div class="forecasts__inner inner-sm" data-cube-parent>
+		<div class="forecasts__cube" data-cube="forecasts-left"><img src="./img/forecasts-cube-lg.png" alt="cube"></div>
+		<div class="forecasts__cube" data-cube="forecasts-right"><img src="./img/forecasts-cube-sm.png" alt="cube"></div>
+		<h2 class="forecasts__title title-md">Popular forecasts</h2>
+		<div class="forecasts__description">The forecasts are updated every 30 minutes</div>
+	</div>
+	<!-- begin chart -->
+	<div class="forecasts__chart chart">
+		<div class="chart__inner inner-sm">
+			<!-- begin tags -->
+			<div class="tags">
+				<div class="tags__inner">
+					{% for text in ["BTC", "LTC", "ETH", "XRP", "DASH", "XMR"] %}
+					<button class="tag" type="button">{{ text }}</button>
+					{% endfor %}
+				</div>
+			</div>
+			<!-- end tags -->
+		</div>
+		<div class="chart__wrapper">
+			<!-- begin graph -->
+			<div class="graph">
+				<div class="graph__head">
+					<div class="graph__inner-sm inner-sm">
+						<div class="graph__col">
+							<div class="graph__time"></div>
+							<div class="graph__text">XRP/USD</div>
+							<div class="graph__parcent"></div>
+						</div>
+						<div class="graph__col">
+							<div class="graph__time">now</div>
+							<div class="graph__text">12,550</div>
+							<div class="graph__parcent"></div>
+						</div>
+						<div class="graph__col">
+							<div class="graph__time">24 hours</div>
+							<div class="graph__text">12,550</div>
+							<div class="graph__parcent">{{ mixins.icon('up') }}317.00 (5.10%)</div>
+						</div>
+					</div>
+				</div>
+				<img src="./img/graph.png" alt="img">
+			</div>
+			<!-- end graph -->
+		</div>
+	</div>
+	<!-- end chart -->
+</div>
+<!-- end forecasts -->

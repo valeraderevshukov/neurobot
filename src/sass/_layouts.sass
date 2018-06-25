@@ -1,0 +1,29 @@
+.out
+	position: relative
+	overflow: hidden
+
+.inner,
+.inner-sm
+	position: relative
+	z-index: 1
+	margin: 0 auto
+	padding: 0 15px
+	max-width: 1200px
+	+clr
+	+md
+		padding: 0 38px 
+
+.inner
+	+md
+		padding: 0 38px 
+	+sm
+		padding: 0 5px
+
+.inner-sm
+	max-width: 1025px
+	+md
+		padding: 0 66px 
+	+r(839)
+		padding: 0 38px
+	+sm
+		padding: 0 15px

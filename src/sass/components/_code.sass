@@ -1,0 +1,35 @@
+.code
+	border: 8px solid $light-turquoise
+	border-radius: 8px
+	+clr
+	+md
+		border-width: 6px
+	&__input
+		overflow: hidden
+		input
+			padding: 20px 35px
+			height: 80px
+			width: 100%
+			font-family: $montserrat
+			+f(24px,700,1.2)
+			white-space: nowrap
+			text-overflow: ellipsis
+			display: block
+			+md
+				padding: 18px 25px
+				height: 60px
+				font-size: 18px
+	&__btn
+		float: right
+		height: 80px
+		padding: 26px 26px 26px 34px
+		color: $white 
+		font-family: $montserrat
+		+f(24px,700,1.2)
+		background-color: $light-turquoise 
+		+md
+			padding: 12px 16px 12px 22px
+			height: 60px
+		.icon
+			font-size: 28px 
+			vertical-align: middle

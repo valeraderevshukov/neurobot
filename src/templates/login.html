@@ -1,0 +1,50 @@
+---
+title: Login
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<!-- begin login -->
+	<div class="login">
+		<div class="login__inner-sm inner-sm" data-cube-parent>
+			<div data-cube="login-left"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+			<div data-cube="login-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+			<div class="login__head">
+				<h2 class="login__title title-lg">Log In</h2>
+				<div class="login__description">Please, log in to see the forecasts</div>
+			</div>
+			<div class="login__form">
+				<form action="/">
+					<div class="login__wrap">
+						<div class="form-control">
+							<div class="input"><input type="text" placeholder="E-mail"></div>
+						</div>
+						<div class="form-control has-forgot">
+							<div class="input"><input type="password" placeholder="Password"></div>
+							<a href="#" class="forgot">forgot</a>
+						</div>
+						<!-- begin captcha -->
+						<div class="captcha">
+							<div class="captcha__code">
+								<img src="./img/captcha.png" alt="captcha">
+							</div>
+							<div class="form-control">
+								<div class="input"><input type="text" placeholder="Captcha"></div>
+							</div>
+						</div>
+						<!-- end captcha -->
+					</div>
+					<div class="login__footer">
+						<button class="btn btn_lg" type="submit">Log in</button>
+						<a href="#" class="btn btn_lg btn_bord btn_bord-green">Register</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end login -->
+	{% include "partials/home/_footer.html" %}
+
+{% endblock %}

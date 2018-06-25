@@ -1,0 +1,56 @@
+.login
+	padding: 80px 0 230px
+	color: $white 
+	min-height: calc(100vh - 331px)
+	+sm
+		padding: 20px 0 100px
+	&__head
+		margin-bottom: 50px
+		+sm
+			margin-bottom: 20px
+	&__description
+		margin-top: 5px
+		+f(24px, 600, 36px)
+		+md
+			font-size: 18px
+	&__wrap
+		max-width: 370px
+		+sm
+			max-width: 100%
+	&__out
+		max-width: 790px
+	&__row
+		margin: 0 -25px
+		+clr
+	&__col
+		float: left
+		width: 50%
+		padding: 0 25px
+		+sm
+			width: 100%
+		&:not(:first-child)
+			margin-top: 10px
+	&__footer
+		margin-top: 50px
+		+md
+			margin-top: 40px
+		+sm
+			margin-top: 30px
+		.btn
+			+sm
+				width: 100%
+			&:not(:last-child)
+				margin-right: 50px 
+				+md
+					margin-right: 25px
+				+sm
+					margin: 0 0 20px
+.captcha
+	margin: 45px 0
+	+sm
+		margin: 30px 0
+	&__code
+		max-width: 220px
+		padding-left: 20px
+		img
+			max-width: 100%

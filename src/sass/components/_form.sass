@@ -1,0 +1,37 @@
+.form-control
+	position: relative
+	&:not(:first-child)
+		margin-top: 35px
+		+md
+			margin-top: 20px
+		+sm
+			margin-top: 10px 
+	.forgot
+		position: absolute
+		right: 9px
+		top: 18px
+		font-size: 16px
+		font-weight: 600
+		line-height: 1.4
+		color: currentColor
+.input input
+	padding: 0 10px
+	height: 60px
+	width: 100%
+	color: $white 
+	font-family: $montserrat
+	+f(24px,600,1.4)
+	border-bottom: 2px solid rgba(#56ecf6, 0.69)
+	background-color: transparent 
+	display: block
+	+sm
+		padding-left: 18px
+		height: 55px
+		font-size: 16px
+	&::placeholder
+		color: $white 
+	&:focus
+		&::placeholder
+			font-size: 0
+	.has-forgot &
+		padding-right: 80px

@@ -1,0 +1,54 @@
+.team
+	padding: 120px 0
+	color: $white
+	+md
+		padding: 55px 0 90px
+	+sm
+		padding: 40px 0 0
+	&__title
+		margin-bottom: 40px
+		+md
+			margin-bottom: 25px
+		+sm
+			text-align: center
+	&__wrap
+		margin: 0 -41px
+		font-size: 0
+		+md
+			margin: 0 -15px
+	&__col
+		margin-bottom: 60px
+		padding: 0 41px
+		width: 33.3%
+		vertical-align: top
+		display: inline-block
+		&:last-child
+			+sm
+				margin-bottom: 0
+		+md
+			margin-bottom: 30px
+			padding: 0 15px
+		+sm
+			width: 100%
+	&__item
+		text-align: center
+	&__img
+		margin: 0 auto 20px
+		width: 269px
+		height: 269px
+		border-radius: 50% 
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat 
+		+sm
+			width: 202px
+			height: 202px
+	&__name
+		margin-bottom: 8px
+		+f(30px,600,1.2)
+		+md
+			font-size: 24px
+	&__post
+		+f(18px,400,1.2)
+		+md
+			font-size: 14px

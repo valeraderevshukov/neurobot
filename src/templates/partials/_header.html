@@ -1,1 +1,38 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<header class="header"> <!-- has class 'is-menu-open' if open menu  -->
+	<div class="header__inner inner-sm">
+		<!-- begin logo -->
+		<a href="#" class="header__logo logo">
+			<img class="logo__img" src="./img/logo.svg" alt="logo">
+			<h1 class="logo__text">
+				<span class="logo__top">Neurobot<span class="light-turquoise">.trading</span></span>
+				<span class="logo__bottom">Neural network forecasting</span>
+			</h1>
+		</a>
+		<!-- end logo -->
+		<div class="header__right">
+			<!-- begin nav -->
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					{% for text in ["Forecasts", "Tokens", "About", "Log In"] %}
+					<li class="nav__item"><a href="#" class="nav__link">{{ text }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<!-- end nav -->
+			<a href="#" class="btn btn_sm btn_white">Sign Up</a>
+			<!-- begin lang -->
+			<div class="header__lang lang">
+				<div class="lang__current">Eng</div>
+				<ul class="lang__list">
+					<li class="lang__item"><a href="#" class="lang__link">Рус</a></li>
+				</ul>
+			</div>
+			<!-- end lang -->
+		</div>
+		<button class="btn-menu is-open" type="button">
+			<span class="btn-menu__line"></span>
+		</button>
+	</div>
+</header>
+<!-- end header -->

@@ -2,4 +2,12 @@ ProjectTitle: neurobot
 
 PageList:
 - file: page.html
-  ready: 50
+  ready: 100
+- file: tokens.html
+  ready: 100
+- file: about.html
+  ready: 100
+- file: login.html
+  ready: 100
+- file: change-password.html
+  ready: 100

@@ -1,0 +1,62 @@
+<!-- begin tokens -->
+<div class="tokens" data-cube-parent>
+	<div data-cube="tokens-left"><img src="./img/tokens-cube-left.png" alt="cube"></div>
+	<div class="tokens__inner inner" data-cube-parent>
+		<div class="tokens__wrap wrap-white">
+			<article class="article">
+				<h2 class="title-lg">Tokens</h2>
+				<p>The NeuroBot is a neural network algorithm created for forecasting exchange rates of cryptocurrencies. The neural network collects and analyses Data 24/7 and provides forecasts for various cryptocurrencies' exchange rates. There are three types of forecasts: 24 hours, 48 hours and one week. Neural network algorithm implemented with algorithms of the essential aspects of technical analysis, such as patterns and signal indicators calculate forecast Data with one second time.</p>
+				<p>The program will be further upgraded by introducing the remaining elements of technical analysis (Fibonacci retracement, the Elliot wave theory , etc ) and fundamental analysis - market news algorithms will be implemented - one more neural network with functions to determine positive and negative tendencies of the market.</p>
+			</article>
+			<div class="tokens__code">
+				<h3 class="tokens__title-middle title-middle">NEB contract address</h3>
+				<!-- begin code -->
+				<div class="code">
+					<button class="code__btn" type="button">{{ mixins.icon('copy') }}</button>
+					<div class="code__input">
+						<input type="text" value="0xd84500DDAF560dF7bE57702b3A8769A782Ce0277" placeholder="Code">
+					</div>
+				</div>
+				<!-- end code -->
+				<div class="tokens__buttons">
+					<a href="#" class="btn btn_tab-lg">etherscan.io</a>
+					<a href="#" class="btn btn_bord btn_tab-lg">Etherdelta.com</a>
+				</div>
+			</div>
+		</div>
+		<div data-cube="tokens-top"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+		<div data-cube="tokens-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+	</div>
+	{% include "partials/tokens/_roadmap.html" %}
+	<div class="tokens__inner inner">
+		<div class="tokens__wrap wrap-white">
+			<h2 class="tokens__title title-md">How to add NEB Tokens <br>to your wallet?</h2>
+			{% for item in [
+				{
+					info: "You will need to use myetherwallet.com or any similar wallet which supports ERC20 Token.",
+					img: "tokens-img-1"
+				},
+				{
+					info: "To start with, create wallet account and use a password. <br>Keystore File is generated automatically, then you’ll need to save all information in a secure place!",
+					img: "tokens-img-2"
+				},
+				{
+					info: "Go to the View Wallet Info section authorize via select the Keystore File (UTC / JSON) or any other method of authorization you have chosen.",
+					img: "tokens-img-3"
+				},
+				{
+					info: "Enter your File and previously saved password.",
+					img: "tokens-img-4"
+				},
+				{
+					info: "Go to View Wallet info section, authorize same way you did it before and proceed to add the NEB Token.",
+					img: "tokens-img-5"
+				}
+			] %}
+			<div class="tokens__info">{{ item.info | safe }}</div>
+			<div class="tokens__img"><img src="./img/{{ item.img }}.jpg" alt="img"></div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end tokens -->

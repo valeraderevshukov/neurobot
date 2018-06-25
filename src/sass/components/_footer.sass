@@ -1,0 +1,43 @@
+.footer
+	margin: 50px 0 72px
+	color: $white 
+	font-weight: 600
+	+md
+		margin: 67px 0 72px 
+	+sm
+		margin: 197px 0 35px
+	&__inner
+		position: relative
+		z-index: 0
+		&:before
+			position: absolute
+			content: ""
+			top: -7px
+			left: -696px
+			height: 100vh
+			width: 300vw
+			transform: translate(-50%,-50%) rotate(30deg)
+			background-color: $blue 
+			+md
+				top: 0
+				left: -490px 
+			+sm
+				left: -463px
+				width: 550vw
+	&__wrap
+		position: relative
+		z-index: 1
+	&__soc
+		float: left
+		+sm
+			float: none
+	&__right
+		float: right
+		padding-top: 4px
+		font-size: 18px
+		+sm
+			float: none
+			padding-top: 26px
+		.link
+			&:not(:first-child)
+				margin-left: 35px

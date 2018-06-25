@@ -1,0 +1,40 @@
+.tokens
+	&__code
+		margin-top: 40px
+		+md
+			margin-top: 31px
+	&__buttons
+		margin-top: 48px
+		font-size: 0
+		+md
+			margin-top: 36px
+			+r(840)
+				text-align: center
+		.btn
+			min-width: 370px 
+			+md
+				min-width: 332px
+			+r(840)
+				min-width: 290px
+			&:not(:last-child)
+				margin-right: 48px
+				+md
+					margin-right: 18px
+	&__title-middle
+		&:not(:last-child)
+			margin-bottom: 25px
+	&__info
+		font-size: 18px
+		font-weight: 300
+		line-height: 2
+		+md
+			font-size: 14px
+			line-height: 1.6
+		&:not(:last-child)
+			margin-top: 25px 
+	&__img
+		&:not(:first-child)
+			margin-top: 20px
+		img
+			max-width: 100%
+			display: block

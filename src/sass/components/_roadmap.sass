@@ -1,0 +1,63 @@
+.roadmap
+	padding: 180px 0 185px
+	color: $white 
+	+md
+		padding: 152px 0 54px
+	&__head
+		margin-bottom: 138px
+		+md
+			margin-bottom: 111px 
+	&__title
+		line-height: 1
+		+md
+			font-size: 54px
+	&__description
+		font-size: 48px
+		font-weight: 600 
+		+md
+			font-size: 36px
+			line-height: 1
+	&__wrap
+		position: relative
+	&__row
+		+clr
+		&:not(:first-child)
+			margin-top: 94px
+	&__col
+		padding-left: 17px
+		width: 50%
+		display: table
+		min-height: 280px
+		+md
+			min-height: 186px 
+		.roadmap__row:nth-child(odd) &
+			padding-left: 40px
+			float: right
+	&__vert
+		position: relative
+		padding-left: 70px
+		vertical-align: top
+		+f(18px,300,2)
+		display: table-cell
+		+md
+			padding-left: 50px
+			font-size: 14px
+			line-height: 1.6
+	&__text
+		max-width: 360px
+	&__icon
+		position: absolute
+		top: 5px
+		left: 0
+		.icon
+			font-size: 48px
+			+md
+				font-size: 36px
+		img
+			display: block
+	&__title-sm
+		margin-bottom: 6px
+		font-family: $montserrat
+		+f(36px,600,1.1)
+		+md
+			font-size: 27px

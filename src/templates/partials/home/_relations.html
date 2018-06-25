@@ -1,0 +1,47 @@
+<!-- begin relations -->
+<div class="relations">
+	<div class="relations__inner inner-sm" data-cube-parent>
+		<div class="relations__out">
+			<div class="relations__channels">
+				<div class="relations__channels-wrap">
+					{% for item in [
+						{
+							icon: "tg",
+							text: "Telegram bot"
+						},
+						{
+							icon: "tg",
+							text: "Telegram group"
+						},
+						{
+							icon: "tg",
+							text: "Telegram channel"
+						}
+					] %}
+					<div class="relations__row">
+						<a href="#" class="relations__btn btn btn_white btn_tab-lg">{{ mixins.icon(item.icon) }}{{ item.text }}</a>
+					</div>
+					{% endfor %}
+					<div class="relations__footer">
+						<a href="mailto:support@neurobot.trading" class="link">support@neurobot.trading</a>
+					</div>
+				</div>
+			</div>
+			<div class="relations__subscribe">
+				<div class="subscribe">
+					<form action="/">
+						<h2 class="subscribe__title-md title-md title-mix">Subscribe<span class="extra-light">to our news</span></h2>
+						<div class="form-control">
+							<div class="input"><input type="text" placeholder="e-mail"></div>
+						</div>
+						<div class="subscribe__submit">
+							<button class="btn btn_tab-lg" type="submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="relations__cube" data-cube="relations-right"><img src="./img/relations-cube.png" alt="cube"></div>
+	</div>
+</div>
+<!-- end"relations -->

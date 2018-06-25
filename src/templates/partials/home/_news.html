@@ -1,0 +1,40 @@
+<!-- begin news -->
+<div class="news">
+	<div class="news__inner inner-sm" data-cube-parent>
+		<h2 class="news__title title-md">Latest News</h2>
+		<div class="news__items">
+			<div class="news__row row">
+				{% for item in [
+					{
+						img: "http://via.placeholder.com/300x300",
+						title: "Абсолютная погрешность",
+						text: "Рондо синхронизует динамический эллипсис. Газ специфицирует ролевой соноропериод. Стимулирование коммьюнити, как неоднократно наблюдалось."
+					},
+					{
+						img: "http://via.placeholder.com/300x300",
+						title: "Производство имитирует эгоцентризм",
+						text: "Закон тормозит гидродинамический удар. Контекстная реклама вертикально восстанавливает интеграл по бесконечной области."
+					},
+					{
+						img: "http://via.placeholder.com/300x300",
+						title: "Тест полифигурно отражает",
+						text: "Визуализация концепии, следовательно, излучает архетип. Не доказано, что струя накладывает девиантный стратегический рыночный план. Интеграл Дирихле отклоняет креативный постулат."
+					}
+				] %}
+				<div class="news__col col col-33 col-sm-100">
+					<div class="item">
+						<div class="item__img" style="background-image: url('{{ item.img }}')"></div>
+						<h4 class="item__title-sm title-sm">{{ item.title }}</h4>
+						<p>{{ item.text }}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="news__footer">
+			<a href="#" class="btn">Load More</a>
+		</div>
+		<div class="news__cube" data-cube="news-right"><img src="./img/news-cube.png" alt="cube"></div>
+	</div>
+</div>
+<!-- end news -->
