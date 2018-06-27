@@ -10,31 +10,67 @@
 				{% for item in [
 					{
 						icon: 'elliott',
+						circle: {
+							step: '10',
+							year: '2017',
+							class: 'circle_white circle_right'
+						},
+						box: 'box-1',
+						line: 'top-line-mob',
 						title: 'Elliott wave theory',
 						text: 'The algorithm will take into account the Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.'
 					},
 					{
 						icon: 'analysis',
+						circle: {
+							step: '11',
+							year: '2017',
+							class: 'circle_white circle_right'
+						},
+						line: 'mob-first-line',
 						title: 'Basic analysis of news',
 						text: 'Accounting for news in the forecast of neurobot. Basic analysis of market sentiment.'
 					},
 					{
 						icon: 'api',
+						circle: {
+							step: '01',
+							year: '2018'
+						},
+						box: 'box-2',
+						line: 'mob-second-line',
 						title: 'API for trading systems',
 						text: 'The launch of a beta api for developing trading robots on the platform Neurobot.'
 					},
 					{
 						icon: 'improved',
+						circle: {
+							step: '03',
+							year: '2018'
+						},
+						line: 'mob-third-line',
 						title: 'Improved news analysis',
 						text: 'Grouping news into semantic chains according to the positive and negative scenarios. This will enable neurobot to predict the emerging of news critical to the market.'
 					},
 					{
 						icon: 'instruments',
+						circle: {
+							step: '04',
+							year: '2018'
+						},
+						box: 'box-3',
+						line: 'mob-fours-line',
 						title: 'Adding new trading instruments',
 						text: 'Forecasting tokens. The overall improvement in accuracy of the algorithm.'
 					},
 					{
 						icon: 'rocket',
+						circle: {
+							step: '03',
+							year: '2018'
+						},
+						box: 'box-4',
+						line: 'mob-bottom-line',
 						title: 'The release version of Neurobot',
 						text: 'Run the release version API for developing trading robots.'
 					}
@@ -42,6 +78,16 @@
 				<div class="roadmap__row">
 					<div class="roadmap__col">
 						<div class="roadmap__vert">
+							<div class="roadmap__circle circle{% if item.circle.class %} {{ item.circle.class }}{% endif %}"> 
+								<div class="circle__step">{{ item.circle.step }}</div>
+								<div class="circle__year">{{ item.circle.year }}</div>
+							</div>
+							{% if item.line %}
+							<div class="roadmap__line"><img src="./img/{{ item.line }}.png" alt="line"></div>
+							{% endif %}
+							{% if item.box %}
+							<div class="roadmap__box"><img src="./img/path/{{ item.box }}.png" alt="img"></div>
+							{% endif %}
 							<div class="roadmap__icon">{{ mixins.icon(item.icon) }}</div>
 							<h4 class="roadmap__title-sm">{{ item.title }}</h4>
 							<div class="roadmap__text">{{ item.text }}</div>

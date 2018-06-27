@@ -11,3 +11,5 @@ PageList:
   ready: 100
 - file: change-password.html
   ready: 100
+- file: forecasts.html
+  ready: 100

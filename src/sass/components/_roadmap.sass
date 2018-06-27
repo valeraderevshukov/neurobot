@@ -3,10 +3,14 @@
 	color: $white 
 	+md
 		padding: 152px 0 54px
+	+sm
+		padding: 63px 0 225px
 	&__head
 		margin-bottom: 138px
 		+md
 			margin-bottom: 111px 
+		+sm
+			margin-bottom: 126px 
 	&__title
 		line-height: 1
 		+md
@@ -19,10 +23,19 @@
 			line-height: 1
 	&__wrap
 		position: relative
+	&__out
+		+sm
+			margin: 0 auto
+			max-width: 290px
 	&__row
 		+clr
 		&:not(:first-child)
 			margin-top: 94px
+			+sm
+				margin-top: 35px
+			&:nth-child(2n-1)
+				+sm
+					margin-top: 193px
 	&__col
 		padding-left: 17px
 		width: 50%
@@ -30,9 +43,111 @@
 		min-height: 280px
 		+md
 			min-height: 186px 
+		+sm
+			position: relative
+			float: right
+			padding: 0
+			width: 100%
+			min-height: 0
+			width: calc( 100% + ( ( 100vw - 100% ) / 2 - 30px / 2 ) )
+		&:before
+			position: absolute
+			content: ""
+			top: 0 
+			right: 23px
+			bottom: -16px
+			width: 8px
+			display: none
+			background: url(../img/circle.png) repeat-y
+			background-size: contain
+			+sm
+				display: block
+			.roadmap__row:first-child &
+				bottom: -40px
+				background: $white 
+			.roadmap__row:nth-child(4n-2) &,
+			.roadmap__row:nth-child(4n-3) &
+				left: 23px
+				right: auto 
+			.roadmap__row:nth-child(3) &
+				top: -12px
+				bottom: -20px
+			.roadmap__row:nth-child(4) &
+				top: -13px
+				bottom: -13px 
+			.roadmap__row:nth-child(6) &
+				top: -16px
+				bottom: -38px
+				
+
+		.roadmap__row:first-child &
+			+sm
+				min-height: 200px
+		.roadmap__row:nth-child(2) &
+			+sm
+				min-height: 134px
+		.roadmap__row:nth-child(3) &
+			+sm
+				min-height: 134px
+		.roadmap__row:nth-child(4) &
+			+sm
+				min-height: 200px
+		.roadmap__row:nth-child(5) &
+			+sm
+				min-height: 163px
+		.roadmap__row:nth-child(6) &
+			+sm
+				min-height: 141px
+				
 		.roadmap__row:nth-child(odd) &
 			padding-left: 40px
 			float: right
+			+sm
+				padding: 0
+		.roadmap__row:nth-child(4n-2) &,
+		.roadmap__row:nth-child(4n-3) &
+			+sm
+				float: left
+	&__circle
+		display: none
+		+sm
+			top: 0
+			right: 0
+			left: auto
+			margin-left: 0
+			display: block
+		.roadmap__row:nth-child(4n-2) &,
+		.roadmap__row:nth-child(4n-3) &
+			+sm
+				left: 0
+		.roadmap__row:nth-of-type(5n+3) &,
+		.roadmap__row:nth-of-type(6n+4) &
+			&:before
+				left: 0
+	&__box
+		position: absolute
+		display: none
+		+sm
+			display: block
+		.roadmap__row:first-child &
+			left: 235px
+			top: -305px
+			width: 144px
+		.roadmap__row:nth-of-type(3) &
+			right: 107px
+			top: -160px
+			width: 72px
+		.roadmap__row:nth-of-type(5) &
+			left: 110px
+			top: -155px
+			width: 72px
+		.roadmap__row:nth-of-type(6) &
+			left: 96px
+			top: 185px
+			width: 115px
+		img
+			max-width: 100%
+			display: block
 	&__vert
 		position: relative
 		padding-left: 70px
@@ -43,12 +158,59 @@
 			padding-left: 50px
 			font-size: 14px
 			line-height: 1.6
+		+sm
+			padding: 0 70px 0 0
+		.roadmap__row:nth-child(4n-2) &,
+		.roadmap__row:nth-child(4n-3) &
+			+sm
+				padding: 0 8px 0 75px
+	&__line
+		position: absolute
+		width: 145px
+		display: none
+		+sm
+			display: block
+		.roadmap__row:first-child &
+			left: 22px
+			bottom: 100%
+			margin-bottom: -12px
+			width: 280px
+		.roadmap__row:nth-child(2) &
+			top: 100%
+			left: 23px
+			margin-top: 8px
+			width: 108px
+		.roadmap__row:nth-child(3) &
+			right: 23px
+			margin-bottom: 15px
+			bottom: 100%
+		.roadmap__row:nth-child(4) &
+			top: 100%
+			right: 23px
+			margin-top: 0
+			width: 119px
+		.roadmap__row:nth-child(5) &
+			left: 23px
+			bottom: 100%
+			width: 112px
+		.roadmap__row:nth-child(6) &
+			left: 23px
+			top: 100%
+			margin-top: 35px
+			width: 280px
+		img
+			max-width: 100%
+			display: block
 	&__text
 		max-width: 360px
+		+sm
+			max-width: 100%
 	&__icon
 		position: absolute
 		top: 5px
 		left: 0
+		+sm
+			display: none
 		.icon
 			font-size: 48px
 			+md
@@ -61,3 +223,5 @@
 		+f(36px,600,1.1)
 		+md
 			font-size: 27px
+		+sm
+			margin-bottom: 10px 

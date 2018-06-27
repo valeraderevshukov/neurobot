@@ -8,21 +8,35 @@
 		font-size: 0
 		+md
 			margin-top: 36px
-			+r(840)
-				text-align: center
+		+r(840)
+			text-align: center
+		+sm
+			margin-top: 15px
 		.btn
 			min-width: 370px 
 			+md
 				min-width: 332px
 			+r(840)
 				min-width: 290px
+			+sm
+				min-width: 0
+				width: 100%
 			&:not(:last-child)
 				margin-right: 48px
 				+md
 					margin-right: 18px
+				+sm
+					margin: 0 0 16px
 	&__title-middle
 		&:not(:last-child)
 			margin-bottom: 25px
+			+sm
+				margin-bottom: 20px
+		+sm
+			margin-right: -10px
+	&__title
+		+sm
+			margin-right: -15px
 	&__info
 		font-size: 18px
 		font-weight: 300
