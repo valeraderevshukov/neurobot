@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Payment</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -29,15 +29,19 @@
             <!-- begin nav -->
             <nav class="header__nav nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Forecasts</a></li>
+                <li class="nav__item is-active"><a href="#" class="nav__link">Forecasts</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Tokens</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Log In</a></li>
               </ul>
             </nav>
-            <!-- end nav --><a href="#" class="btn btn_sm btn_white">Sign Up</a>
+            <!-- end nav -->
+            <!-- begin user --><a href="#" class="user">
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+</a>
+            <!-- end user -->
             <!-- begin lang -->
-            <div class="header__lang lang">
+            <div class="header__lang lang lang_mod">
               <div class="lang__current">Eng</div>
               <ul class="lang__list">
                 <li class="lang__item"><a href="#" class="lang__link">Рус</a></li>
@@ -55,27 +59,19 @@
           <div data-cube="login-left"><img src="./img/tokens-cube-top.png" alt="cube"></div>
           <div data-cube="login-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
           <div class="login__head">
-            <h2 class="login__title title-lg">Log In</h2>
-            <div class="login__description">Please, log in to see the forecasts</div>
+            <h2 class="login__title title-lg">Payment</h2>
+            <div class="login__description">ETH address</div>
           </div>
           <div class="login__form">
             <form action="/">
-              <div class="login__wrap">
-                <div class="form-control">
-                  <div class="input"><input type="text" placeholder="E-mail"></div>
-                </div>
-                <div class="form-control has-forgot">
-                  <div class="input"><input type="password" placeholder="Password"></div> <a href="#" class="forgot">forgot</a> </div>
-                <!-- begin captcha -->
-                <div class="captcha">
-                  <div class="captcha__code"> <img src="./img/captcha.png" alt="captcha"> </div>
-                  <div class="form-control">
-                    <div class="input"><input type="text" placeholder="Captcha"></div>
-                  </div>
-                </div>
-                <!-- end captcha -->
+              <div class="qr-code"> <img src="./img/qr-code.png" alt="qr-code"> </div>
+              <!-- begin code -->
+              <div class="code code_white"> <button class="code__btn" type="button">
+<svg class="icon icon-copy"><use xlink:href="img/sprite.svg#icon-copy"></use></svg>
+</button>
+                <div class="code__input"> <input type="text" value="0xd84500DDAF560dF7bE57702b3A8769A782Ce0277" placeholder="Code"> </div>
               </div>
-              <div class="login__footer"> <button class="btn btn_lg" type="submit">Log in</button> <a href="#" class="btn btn_lg btn_bord btn_bord-green">Register</a> </div>
+              <div class="login__footer"> <button class="btn btn_lg" type="submit">Already paid</button> </div>
             </form>
           </div>
         </div>

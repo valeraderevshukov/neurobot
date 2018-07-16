@@ -15,14 +15,16 @@
 			<nav class="header__nav nav">
 				<ul class="nav__list">
 					{% for text in ["Forecasts", "Tokens", "About", "Log In"] %}
-					<li class="nav__item"><a href="#" class="nav__link">{{ text }}</a></li>
+					<li class="nav__item{% if loop.first %} is-active{% endif %}"><a href="#" class="nav__link">{{ text }}</a></li>
 					{% endfor %}
 				</ul>
 			</nav>
 			<!-- end nav -->
-			<a href="#" class="btn btn_sm btn_white">Sign Up</a>
+			<!-- begin user -->
+			<a href="#" class="user">{{ mixins.icon('user') }}</a>
+			<!-- end user -->
 			<!-- begin lang -->
-			<div class="header__lang lang">
+			<div class="header__lang lang lang_mod">
 				<div class="lang__current">Eng</div>
 				<ul class="lang__list">
 					<li class="lang__item"><a href="#" class="lang__link">Рус</a></li>

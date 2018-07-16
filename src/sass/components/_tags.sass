@@ -1,0 +1,94 @@
+.tag
+	position: relative
+	margin: 0 29px 29px 0
+	padding: 0 10px
+	height: 94px
+	line-height: 88px
+	min-width: 136px
+	color: $white 
+	font-family: $montserrat
+	+f(30px,700,1.2)
+	border: 8px solid #223e5c
+	border-radius: 8px
+	vertical-align: top
+	text-transform: uppercase
+	background-color: transparent 
+	transition: border-color .3s, background-color .3s
+	display: inline-block
+	&_lg
+		min-width: 200px
+	+md
+		margin: 0 20px 20px 0
+		padding: 0 15px 
+		font-size: 18px
+		height: 64px
+		line-height: 48px
+		min-width: 101px
+	+sm
+		margin: 0 9px 10px 0
+		padding: 7px 11px 
+		border-width: 6px
+		height: auto
+		min-height: 48px
+		line-height: 21px
+		min-width: 90px
+	&:hover
+		border-color: #175067
+	&.is-active
+		border-color: $turquoise 
+		background-color: $turquoise
+	&_green
+		border-color: #11d2df
+		&:hover
+			border-color: #56ecf6
+			background-color: transparent
+	&__inner
+		line-height: 1.2
+		vertical-align: middle
+		display: inline-block
+	&__icon
+		position: absolute
+		top: 8px
+		right: 8px
+		font-size: 0
+		line-height: 1
+		+md
+			top: 3px
+			right: 3px
+		.icon
+			font-size: 15px
+			color: #fec909
+			+sm
+				font-size: 11px
+	&__description
+		font-size: 14px
+		display: block
+		
+.tags
+	position: relative
+	font-size: 0
+	overflow: hidden
+	&:not(:first-child)
+		margin-top: 60px
+		+md
+			margin-top: 36px
+		+sm
+			margin-top: 30px
+	&__inner
+		margin: 0 -29px -29px 0 
+		+md
+			margin: 0 -20px -20px 0 
+		+sm
+			margin: 0 -9px -10px 0 
+	&__title-middle
+		+md
+			font-size: 30px
+		+sm
+			font-size: 18px
+			font-weight: 600
+		&:not(:last-child)
+			margin-bottom: 42px
+			+md
+				margin-bottom: 12px
+			+sm
+				margin-bottom: 20px

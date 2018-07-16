@@ -7,10 +7,209 @@ title: forecasts
 	
 	{% include "partials/_header.html" %}
 	<div class="wrap">
-		<!-- begin forecasts -->
-		<div class="forecasts">
-			<div class="forecasts__inner inner">
-				
+		<!-- begin forecast -->
+		<div class="forecast">
+			<div class="forecast__inner inner-sm" data-cube-parent>
+				<div class="forecast__head">
+					<div class="head">
+						<div class="head__left">
+							<h2 class="head__title-lg title-lg">Forecasts</h2>
+							<div class="head__description">The forecasts are updated every 30 minutes</div>
+						</div>
+						<div class="head__right">
+							<a href="#" class="btn btn_md">Pay</a>
+						</div>
+					</div>
+				</div>
+				{% for tags in [
+				{
+					title: "Favourites",
+					list: [
+						{
+							name: "BTC"
+						},
+						{
+							name: "LTC",
+							icon: "star"
+						},
+						{
+							name: "ETH",
+							icon: "star"
+						},
+						{
+							name: "XRP"
+						}
+					]
+				},
+				{
+					title: "Currency pairs with USD",
+					list: [
+						{
+							name: "BTC"
+						},
+						{
+							name: "LTC"
+						},
+						{
+							name: "ETH"
+						},
+						{
+							name: "XRP"
+						},
+						{
+							name: "DASH"
+						},
+						{
+							name: "XMR"
+						},
+						{
+							name: "ETC"
+						},
+						{
+							name: "ZEC"
+						},
+						{
+							name: "BCH"
+						},
+						{
+							name: "STR"
+						},
+						{
+							name: "NXT"
+						},
+						{
+							name: "REP"
+						}
+					]
+				},
+				{
+					title: "Currency pairs with BTC",
+					list: [
+						{
+							name: "BCH",
+							description: "/btc"
+						},
+						{
+							name: "ETH",
+							description: "/btc"
+						},
+						{
+							name: "XMR",
+							description: "/btc"
+						},
+						{
+							name: "XRP",
+							description: "/btc"
+						},
+						{
+							name: "LTC",
+							description: "/btc"
+						},
+						{
+							name: "DASH",
+							description: "/btc"
+						},
+						{
+							name: "LSK",
+							description: "/btc"
+						},
+						{
+							name: "STR",
+							description: "/btc"
+						},
+						{
+							name: "ETC",
+							description: "/btc"
+						},
+						{
+							name: "DOGE",
+							description: "/btc"
+						},
+						{
+							name: "ZEC",
+							description: "/btc"
+						},
+						{
+							name: "NXT",
+							description: "/btc"
+						},
+						{
+							name: "BCH",
+							description: "/btc"
+						},
+						{
+							name: "ETH",
+							description: "/btc"
+						},
+						{
+							name: "XMR",
+							description: "/btc"
+						},
+						{
+							name: "XRP",
+							description: "/btc"
+						},
+						{
+							name: "LTC",
+							description: "/btc"
+						},
+						{
+							name: "DASH",
+							description: "/btc"
+						},
+						{
+							name: "LSK",
+							description: "/btc"
+						},
+						{
+							name: "STR",
+							description: "/btc"
+						},
+						{
+							name: "ETC",
+							description: "/btc"
+						},
+						{
+							name: "DOGE",
+							description: "/btc"
+						},
+						{
+							name: "ZEC",
+							description: "/btc"
+						},
+						{
+							name: "NXT",
+							description: "/btc"
+						}
+					]
+				}
+				] %}
+				<!-- begin tags -->
+				<div class="forecast__tags tags">
+					<h3 class="tags__title-middle title-middle">{{ tags.title }}</h3>
+					<div class="tags__inner">
+						{% for tag in tags.list %}
+						<button class="tag tag_green" type="button">
+							<span class="tag__inner">
+								{{ tag.name }}
+								{% if tag.description %}
+								<span class="tag__description">{{ tag.description }}</span>
+								{% endif %}
+							</span>
+							{% if tag.icon %}
+							<span class="tag__icon">{{ mixins.icon(tag.icon) }}</span>
+							{% endif %}
+						</button>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- end tags -->
+				{% endfor %}
+				<p>Please keep in mind that this is an alpha version of the neural network algorithm. Mistakes may occur. Especially in case of unexpected critical news. Unfortunately, such news is very difficult to predict, but we're working on it. In moments like these it is better to requery the forecast and neurobot will show how the situation will be developing. The forecasts are updated every 30 minutes.</p>
+
+				<div data-cube="forecast-left"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+				<div data-cube="forecast-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+				<div data-cube="forecast-right-bottom"><img src="./img/tokens-cube-right.png" alt="cube"></div>
 			</div>
 		</div>
 		<!-- end forecasts -->

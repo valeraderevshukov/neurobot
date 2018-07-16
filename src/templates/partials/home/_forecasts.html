@@ -13,7 +13,7 @@
 			<div class="tags">
 				<div class="tags__inner">
 					{% for text in ["BTC", "LTC", "ETH", "XRP", "DASH", "XMR"] %}
-					<button class="tag" type="button">{{ text }}</button>
+					<button class="tag{% if loop.index == 2 %} is-active{% endif %}" type="button"><span class="tag__inner">{{ text }}</span></button>
 					{% endfor %}
 				</div>
 			</div>

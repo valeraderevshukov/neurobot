@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>forecast_paid</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body class="is-blue">
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header">
+        <!-- has class 'is-menu-open' if open menu  -->
+        <div class="header__inner inner-sm">
+          <!-- begin logo --><a href="/" class="header__logo logo">
+			<img class="logo__img" src="./img/logo.svg" alt="logo">
+			<h1 class="logo__text">
+				<span class="logo__top">Neurobot<span class="light-turquoise">.trading</span></span>
+				<span class="logo__bottom">Neural network forecasting</span>
+			</h1>
+		</a>
+          <!-- end logo -->
+          <div class="header__right">
+            <!-- begin nav -->
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item is-active"><a href="#" class="nav__link">Forecasts</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Tokens</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Log In</a></li>
+              </ul>
+            </nav>
+            <!-- end nav -->
+            <!-- begin user --><a href="#" class="user">
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+</a>
+            <!-- end user -->
+            <!-- begin lang -->
+            <div class="header__lang lang lang_mod">
+              <div class="lang__current">Eng</div>
+              <ul class="lang__list">
+                <li class="lang__item"><a href="#" class="lang__link">Рус</a></li>
+              </ul>
+            </div>
+            <!-- end lang -->
+          </div> <button class="btn-menu is-open" type="button">
+			<span class="btn-menu__line"></span>
+		</button> </div>
+      </header>
+      <!-- end header -->
+      <div class="wrap">
+        <!-- begin forecast -->
+        <div class="forecast">
+          <div class="forecast__inner inner-sm">
+            <div class="forecast__head">
+              <div class="head">
+                <div class="head__left">
+                  <h2 class="forecast__title-lg title-lg">ETH/USD</h2>
+                </div>
+                <div class="head__right">
+                  <div class="star"> <svg xmlns="http://www.w3.org/2000/svg" width="54" height="51" viewBox="0 0 54 51">
+								    <title>star-solid</title>
+								    <path d="M18.23 13.76l5.9-12.12a3 3 0 0 1 4-1.35 3 3 0 0 1 1.34 1.28l6.21 12a3 3 0 0 0 2.23 1.57l13.54 1.78A2.94 2.94 0 0 1 54 20.21a2.91 2.91 0 0 1-.84 1.68l-9.65 9.49a2.9 2.9 0 0 0-.83 2.6l2.44 13.22a2.93 2.93 0 0 1-2.39 3.4 3 3 0 0 1-1.89-.27l-12.16-6.12a3 3 0 0 0-2.77 0l-12 6.4a3 3 0 0 1-4-1.17 2.89 2.89 0 0 1-.32-1.86l2.11-13.25a2.9 2.9 0 0 0-.89-2.58L.93 22.48a2.89 2.89 0 0 1-.1-4.13 3 3 0 0 1 1.69-.87L16 15.4a3 3 0 0 0 2.23-1.64z" fill="#fec909"/>
+								</svg> </div>
+                </div>
+              </div>
+              <div class="forecast__description">The forecasts are updated every 30 minutes</div>
+            </div>
+          </div>
+          <!-- begin chart -->
+          <div class="forecasts__chart chart">
+            <div class="chart__inner inner-sm">
+              <!-- begin tags -->
+              <div class="tags">
+                <div class="tags__inner"> <button class="tag tag_lg" type="button"><span class="tag__inner">24 hours</span></button> <button class="tag tag_lg is-active" type="button"><span class="tag__inner">48 hours</span></button> <button class="tag tag_lg" type="button"><span class="tag__inner">7 days</span></button>                  </div>
+              </div>
+              <!-- end tags -->
+            </div>
+            <div class="chart__wrapper">
+              <!-- begin graph -->
+              <div class="graph">
+                <div class="graph__head">
+                  <div class="graph__inner-sm inner-sm">
+                    <div class="graph__col">
+                      <div class="graph__time"></div>
+                      <div class="graph__text">XRP/USD</div>
+                      <div class="graph__parcent"></div>
+                    </div>
+                    <div class="graph__col">
+                      <div class="graph__time">now</div>
+                      <div class="graph__text">12,550</div>
+                      <div class="graph__parcent"></div>
+                    </div>
+                    <div class="graph__col">
+                      <div class="graph__time">24 hours</div>
+                      <div class="graph__text">12,550</div>
+                      <div class="graph__parcent"> <svg class="icon icon-up"><use xlink:href="img/sprite.svg#icon-up"></use></svg> 317.00 (5.10%)</div>
+                    </div>
+                  </div>
+                </div> <img src="./img/graph.png" alt="img"> </div>
+              <!-- end graph -->
+            </div>
+          </div>
+          <!-- end chart -->
+        </div>
+        <!-- end forecasts -->
+      </div>
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__inner inner-sm" data-cube-parent>
+          <div class="footer__wrap">
+            <!-- begin soc -->
+            <ul class="footer__soc soc">
+              <li class="soc__item"><a href="#" class="soc__link" target="_blank">
+<svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+</a></li>
+              <li class="soc__item"><a href="#" class="soc__link" target="_blank">
+<svg class="icon icon-inst"><use xlink:href="img/sprite.svg#icon-inst"></use></svg>
+</a></li>
+              <li class="soc__item"><a href="#" class="soc__link" target="_blank">
+<svg class="icon icon-yt"><use xlink:href="img/sprite.svg#icon-yt"></use></svg>
+</a></li>
+              <li class="soc__item"><a href="#" class="soc__link" target="_blank">
+<svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+</a></li>
+            </ul>
+            <!-- end soc -->
+            <div class="footer__right"> <a href="#" class="link" target="_blank">Cookies</a> <a href="#" class="link" target="_blank">Privacy Policy</a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

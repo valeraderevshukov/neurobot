@@ -13,3 +13,15 @@ PageList:
   ready: 100
 - file: forecasts.html
   ready: 100
+- file: forecast_2.html
+  ready: 100
+- file: forecast_paid.html
+  ready: 100
+- file: payment.html
+  ready: 100
+- file: restore-password.html
+  ready: 100
+- file: profile.html
+  ready: 100
+- file: registration.html
+  ready: 100

@@ -8,6 +8,12 @@
 		margin-bottom: 50px
 		+sm
 			margin-bottom: 20px
+	&__title-middle
+		margin-bottom: 35px
+		+md
+			margin-bottom: 20px
+		+sm
+			margin-bottom: 10px 
 	&__description
 		margin-top: 5px
 		+f(24px, 600, 36px)
@@ -17,11 +23,23 @@
 		max-width: 370px
 		+sm
 			max-width: 100%
+		& + .login__row
+			margin-top: 35px
+			+md
+				margin-top: 20px
+			+sm
+				margin-top: 10px 
 	&__out
 		max-width: 790px
 	&__row
 		margin: 0 -25px
 		+clr
+		& + .login__wrap
+			margin-top: 35px
+			+md
+				margin-top: 20px
+			+sm
+				margin-top: 10px 
 	&__col
 		float: left
 		width: 50%
@@ -29,7 +47,8 @@
 		+sm
 			width: 100%
 		&:not(:first-child)
-			margin-top: 10px
+			+sm
+				margin-top: 10px
 	&__footer
 		margin-top: 50px
 		+md
@@ -54,3 +73,105 @@
 		padding-left: 20px
 		img
 			max-width: 100%
+
+.qr-code
+	width: 256px
+	+md
+		width: 200px
+	+sm
+		width: 168px
+	&:not(:last-child)
+		margin-bottom: 45px
+		+sm
+			margin-bottom: 30px
+	img
+		max-width: 100%
+		display: block
+
+.balance
+	border: 8px solid $light-turquoise
+	border-radius: 8px
+	+clr
+	+md
+		border-width: 6px
+	+sm
+		display: flex
+		flex-wrap: wrap
+		border-width: 0
+	&:not(:last-child)
+		margin-bottom: 50px
+	&__wrap
+		padding: 25px 35px
+		height: 80px
+		+f(24px,700,1.2)
+		color: $white
+		overflow: hidden
+		+clr
+		+md
+			padding: 18px 25px
+			height: 60px
+			font-size: 18px
+		+sm
+			float: none
+			order: 1
+			width: 100%
+			padding: 0
+			height: auto
+			font-size: 24px
+	&__text
+		float: left
+		+sm
+			float: none
+	&__list
+		float: right
+		+sm
+			float: none
+			margin: 20px 0 25px
+	&__item
+		position: relative
+		padding: 0 15px
+		vertical-align: top
+		display: inline-block
+		+sm
+			padding: 0
+			font-size: 30px
+			font-weight: 700
+			line-height: 1.2
+			display: block
+		&:not(:first-child)
+			&:before
+				position: absolute
+				content: "" 
+				top: 0
+				left: -1px
+				bottom: 0
+				width: 3px
+				background-color: $light-turquoise 
+				+sm
+					display: none
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+	&__btn
+		float: right
+		height: 80px
+		padding: 26px 58px 26px 66px
+		color: $white 
+		font-family: $montserrat
+		+f(24px,700,1.2)
+		background-color: $light-turquoise 
+		+md
+			padding: 12px 42px 12px 50px
+			height: 60px
+			font-size: 18px
+		+sm
+			float: none
+			order: 2
+			padding: 21px 50px
+			height: 64px
+			font-size: 18px
+			border-radius: 8px
+		.icon
+			font-size: 28px 
+			vertical-align: middle

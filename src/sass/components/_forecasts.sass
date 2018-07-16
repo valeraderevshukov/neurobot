@@ -38,41 +38,9 @@
 			margin-top: 25px 
 .chart
 	&__wrapper
-		margin-top: 11px
+		margin-top: 71px
 		+sm
 			margin-top: 22px 
-.tags
-	position: relative
-	font-size: 0
-	overflow: hidden
-	&__inner
-		margin-right: -29px
-.tag
-	margin: 0 29px 29px 0
-	padding: 18px 26px
-	color: $white 
-	font-family: $montserrat
-	+f(30px,700,1.2)
-	border: 8px solid #223e5c
-	border-radius: 8px
-	vertical-align: top
-	text-transform: uppercase
-	background-color: transparent 
-	transition: border-color .3s, background-color .3s
-	display: inline-block
-	+md
-		margin: 0 20px 20px 0
-		padding: 13px 15px 
-		font-size: 18px
-		min-width: 101px
-	+sm
-		margin: 0 9px 10px 0
-		padding: 7px 11px 
-		border-width: 6px
-		min-width: 90px
-	&:hover
-		border-color: $turquoise 
-		background-color: $turquoise
 .graph
 	position: relative
 	margin: 0 auto
@@ -139,3 +107,135 @@
 			vertical-align: top
 			+sm
 				font-size: 4px
+
+// forecast
+.forecast
+	position: relative
+	font-size: 18px
+	line-height: 2
+	color: $white 
+	+md
+		font-size: 14px
+		line-height: 1.6
+	p
+		&:not(:first-child)
+			margin-top: 55px
+			+md
+				margin-top: 48px
+	&__rates
+		padding-bottom: 687px
+		+md
+			padding-bottom: 0
+	&__info
+		text-align: center
+		&:not(:first-child)
+			margin-top: 160px
+			+md
+				margin-top: 80px
+			+sm
+				margin-top: 30px
+	&__description
+		font-size: 24px
+		font-weight: 600
+		line-height: 1.5
+		+md
+			font-size: 18px
+		+sm
+			font-size: 14px
+		&:not(:first-child)
+			margin-top: 15px
+			+md
+				margin-top: 8px
+
+.cabin-bg
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-repeat: no-repeat
+	background-size: 100% auto
+	background-position: 0 190px
+
+.head
+	width: 100%
+	display: table
+	+clr
+	&__left,
+	&__right
+		vertical-align: top
+		display: table-cell
+	&__left
+		padding-right: 10px
+	&__right
+		text-align: right
+		.btn
+			+md
+				min-width: 131px 
+			+sm
+				padding-left: 10px
+				padding-right: 10px
+				min-width: 90px
+	&__description
+		margin-top: 5px
+		font-size: 24px
+		font-weight: 600
+		line-height: 1.5
+		+md
+			font-size: 18px
+		+sm
+			font-size: 14px
+
+.rates
+	&:not(:first-child)
+		margin-top: 44px
+		+sm
+			margin-top: 20px
+	&__row
+		margin: 0 -14px
+		+clr
+	&__col
+		float: left
+		padding: 0 14px
+		width: 33.3%
+		&:not(:first-child)
+			+sm
+				margin-top: 20px
+		+sm
+			width: 100%
+.rate
+	text-align: center
+	border: 8px solid $turquoise
+	border-radius: 8px
+	&.is-active
+		background-color: $turquoise 
+	&__body
+		padding: 48px 10px 53px
+		line-height: 1
+		+sm
+			padding: 38px 10px
+	&__gap
+		font-size: 24px
+		font-weight: 400
+	&__price
+		margin: 21px 0 10px
+		font-size: 48px
+		font-weight: 600
+		+sm
+			font-size: 36px
+	&__period
+		font-size: 24px
+		font-weight: 300
+	&__footer
+		.btn
+			margin-bottom: -8px
+			min-width: 100%
+			border-radius: 0 
+			background-color: $turquoise 
+
+.star
+	font-size: 0
+	svg
+		+md
+			width: 40px
+			height: auto

@@ -1,0 +1,40 @@
+---
+title: Payment
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header-user.html" %}
+	<!-- begin login -->
+	<div class="login">
+		<div class="login__inner-sm inner-sm" data-cube-parent>
+			<div data-cube="login-left"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+			<div data-cube="login-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+			<div class="login__head">
+				<h2 class="login__title title-lg">Payment</h2>
+				<div class="login__description">ETH address</div>
+			</div>
+			<div class="login__form">
+				<form action="/">
+					<div class="qr-code">
+						<img src="./img/qr-code.png" alt="qr-code">
+					</div>
+					<!-- begin code -->
+					<div class="code code_white">
+						<button class="code__btn" type="button">{{ mixins.icon('copy') }}</button>
+						<div class="code__input">
+							<input type="text" value="0xd84500DDAF560dF7bE57702b3A8769A782Ce0277" placeholder="Code">
+						</div>
+					</div>
+					<div class="login__footer">
+						<button class="btn btn_lg" type="submit">Already paid</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end login -->
+	{% include "partials/home/_footer.html" %}
+
+{% endblock %}

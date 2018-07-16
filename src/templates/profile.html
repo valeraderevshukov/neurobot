@@ -1,0 +1,59 @@
+---
+title: Profile
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<!-- begin login -->
+	<div class="login">
+		<div class="login__inner-sm inner-sm" data-cube-parent>
+			<div data-cube="login-left"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+			<div data-cube="login-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+			<div class="login__head">
+				<h2 class="login__title title-lg">Profile</h2>
+				<div class="login__description">The forecasts are updated every 30 minutes</div>
+			</div>
+			<!-- begin balance -->
+			<div class="balance">
+				<button class="balance__btn" type="button">Pay</button>
+				<div class="balance__wrap">
+					<div class="balance__text">Balance</div>
+					<ul class="balance__list">
+						<li class="balance__item">0 ETH</li>
+						<li class="balance__item">$0</li>
+						<li class="balance__item">0 NEB</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end balance -->
+			<div class="login__form">
+				<form action="/">
+					<h3 class="login__title-middle title-middle">Personal Information</h3>
+					<div class="login__out">
+						<div class="login__wrap">
+							<div class="form-control">
+								<div class="input"><input type="text" placeholder="E-mail"></div>
+							</div>
+						</div>
+						<div class="login__row">
+							<div class="login__col">
+								<div class="input"><input type="password" placeholder="Password"></div>
+							</div>
+							<div class="login__col">
+								<div class="input"><input type="password" placeholder="Repeat Password"></div>
+							</div>
+						</div>
+					</div>
+					<div class="login__footer">
+						<button class="btn btn_lg" type="submit">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end login -->
+	{% include "partials/home/_footer.html" %}
+
+{% endblock %}

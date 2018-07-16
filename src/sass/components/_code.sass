@@ -14,7 +14,14 @@
 			+f(24px,700,1.2)
 			white-space: nowrap
 			text-overflow: ellipsis
+			background-color: transparent 
 			display: block
+			&::placeholder
+				color: $black
+				.code_white &
+					color: $white 
+			.code_white &
+				color: $white 
 			+md
 				padding: 18px 25px
 				height: 60px

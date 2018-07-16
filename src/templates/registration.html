@@ -1,0 +1,58 @@
+---
+title: Registration
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<!-- begin login -->
+	<div class="login">
+		<div class="login__inner-sm inner-sm" data-cube-parent>
+			<div data-cube="login-left"><img src="./img/tokens-cube-top.png" alt="cube"></div>
+			<div data-cube="login-right"><img src="./img/tokens-cube-right.png" alt="cube"></div>
+			<div class="login__head">
+				<h2 class="login__title title-lg">Registration</h2>
+				<div class="login__description">You will get 3 day trial on some forecasts</div>
+			</div>
+			<div class="login__form">
+				<form action="/">
+					<div class="login__out">
+						<div class="login__wrap">
+							<div class="form-control">
+								<div class="input"><input type="text" placeholder="E-mail"></div>
+							</div>
+						</div>
+						<div class="login__row">
+							<div class="login__col">
+								<div class="input"><input type="password" placeholder="Password"></div>
+							</div>
+							<div class="login__col">
+								<div class="input"><input type="password" placeholder="Repeat Password"></div>
+							</div>
+						</div>
+						<div class="login__wrap">
+							<!-- begin captcha -->
+							<div class="captcha">
+								<div class="captcha__code">
+									<img src="./img/captcha.png" alt="captcha">
+								</div>
+								<div class="form-control">
+									<div class="input"><input type="text" placeholder="Captcha"></div>
+								</div>
+							</div>
+							<!-- end captcha -->
+						</div>
+					</div>
+					<div class="login__footer">
+						<button class="btn btn_lg" type="submit">Register</button>
+						<a href="#" class="btn btn_lg btn_bord btn_bord-green">Log In</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end login -->
+	{% include "partials/home/_footer.html" %}
+
+{% endblock %}
